@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 20px 50px;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    .container::before {
+      content: "\2190";
+      position: absolute;
+      left: 15px;
+      font-size: 25px;
+      font-weight: bold;
+      color: #c4c4c4;
+    }
+
+    .header-info {
+      display: flex;
+    }
+
+    .profile-image {
+      width: 180px;
+      border-radius: 4px;
+      background-color: #cccccc;
+      height: 235px;
+      margin: 5px;
+    }
+
+    .profile-info h4 {
+      margin-top: 10px;
+    }
+
+    .profile-info {
+      width: 150px;
+      margin-left: 30px;
+      color: gray;
+    }
+
+    .profile-info p :first-child {
+      margin: 100px 0;
+    }
+
+    .profile-info p {
+      text-align: right;
+    }
+
+    .stats-info-section {
+      display: flex;
+    }
+
+    .stats-info {
+      margin: auto;
+      text-align: right;
+    }
+
+    .number-stats {
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+    hr {
+      margin: 35px 0 25px 0;
+      color: #c4c4c4;
+      border: 1px solid #c4c4c4;
+    }
+    .location {
+      margin: 20px 0;
+      position: relative;
+    }
+    .location::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      border: 2px solid lightgreen;
+      border-radius: 50px;
+      width: 8px;
+      height: 8px;
+      left: 5px;
+      top: 5px;
+    }
+    .location::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      border: 1px solid lightgreen;
+      border-radius: 50px;
+      width: 20px;
+      height: 20px;
+      left: 0;
+    }
+    .user-name {
+      width: 390px;
+      position: relative;
+      margin-bottom: 10px;
+    }
+    .user-name::before {
+      content: "\22EF";
+      position: absolute;
+      right: 35px;
+      color: #c4c4c4;
+    }
+    .body-info {
+      margin-left: 10px;
+    }
+    .job-title {
+      color: #c4c4c4;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header-info">
+      <div class="profile-image"></div>
+      <div class="profile-info">
+        <h4>Work status:</h4>
+        <p class="location">Warsaw, Poland</p>
+        <p>IGN Bank</p>
+        <p>Contract signing</p>
+        <hr>
+        <div class="stats-info-section">
+          <div class="stats-info">
+            <div class="number-stats">234</div>
+            <div class="label-stats">contracts</div>
+          </div>
+          <div class="stats-info">
+            <div class="number-stats">714</div>
+            <div class="label-stats">meetings</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body-info">
+      <h1 class="user-name">Avery Clayton</h1>
+      <div class="job-title">B2B Junior Manager</div>
+    </div>
+  </div>
+</body>
+
+</html>
